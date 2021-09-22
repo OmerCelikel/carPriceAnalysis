@@ -5,7 +5,12 @@ In this project, information of 100,000 vehicles for sale in England was examine
 
 ## Missing Values
 
-https://gist.github.com/OmerCelikel/e18181bd428d8a022c6b5362a06d2860
+```python
+# fill missing values with mean column values
+dataset.fillna(dataset.mean(), inplace=True)
+# count the number of NaN values in each column
+print(dataset.isnull().sum())
+```
 
 
 ## Categorical Variables
