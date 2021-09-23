@@ -42,6 +42,16 @@ I used MSE -> measures how far the data are from the model’s predicted values.
 
 ```python
 model.compile(optimizer = "adam", loss = "mse")
+```
 
-Verinizi train-validation-test diye bölmek (burada validation ve test'in gerçek hayatı yansıtması çok önemli)
-Olabildiğince fazla model denemek ve metriğimizde en iyi yapanı seçmek
+
+## train-validation-test 
+```python
+model.fit(x = x_train, y = y_train, validation_data = (x_test, y_test), batch_size = 250, epochs = 300)
+```
+
+At the end of the project, I found my result with about 13% error.
+
+When the features of the car are given, the price of the car will come out.
+
+
